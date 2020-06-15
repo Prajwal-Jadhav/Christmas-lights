@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2d2a32;
+}
+
+.light-bulbs {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.light-bulbs > div {
+  width: 15px;
+  height: 45px;
+  border-radius: 60%;
+  margin: 0 25px;
+}
+
+.red {
+  background-color: #7e191a;
+  animation: red-glow 2s ease 0s infinite;
+}
+
+.orange {
+  background-color: #732c1a;
+  animation: orange-glow 2s ease 0s infinite;
+}
+
+.yellow {
+  background-color: #64431a;
+  animation: yellow-glow 2s ease 0s infinite;
+}
+
+.green {
+  background-color: #104129;
+  animation: green-glow 2s ease 0s infinite;
+}
+
+.skyblue {
+  background-color: #1e3c71;
+  animation: skyblue-glow 2s ease 0s infinite;
+}
+
+.blue {
+  background-color: #1f1b77;
+  animation: blue-glow 2s ease 0s infinite;
+}
+
+.purple {
+  background-color: #4d1265;
+  animation: purple-glow 2s ease 0s infinite;
+}
+
+@keyframes red-glow {
+  50%,
+  100% {
+    background-color: #7e191a;
+    box-shadow: none;
+  }
+  20%,
+  70% {
+    background-color: #ff0800;
+    box-shadow: 0px 0px 30px 5px rgb(255, 8, 0);
+  }
+}
+@keyframes orange-glow {
+  20%,
+  70% {
+    background-color: #732c1a;
+    box-shadow: none;
+  }
+  50%,
+  100% {
+    background-color: rgb(255, 103, 0);
+    box-shadow: 0px 0px 30px 5px rgb(255, 103, 0);
+  }
+}
+@keyframes yellow-glow {
+  50%,
+  100% {
+    background-color: #64431a;
+    box-shadow: none;
+  }
+  20%,
+  70% {
+    background-color: rgb(255, 215, 0);
+    box-shadow: 0px 0px 30px 5px rgb(255, 215, 0);
+  }
+}
+@keyframes green-glow {
+  20%,
+  70% {
+    background-color: #104129;
+    box-shadow: none;
+  }
+  50%,
+  100% {
+    background-color: rgba(0, 168, 120, 1);
+    box-shadow: 0px 0px 30px 5px rgba(0, 168, 120, 1);
+  }
+}
+@keyframes skyblue-glow {
+  50%,
+  100% {
+    background-color: #1e3c71;
+    box-shadow: none;
+  }
+  20%,
+  70% {
+    background-color: rgb(39, 154, 241);
+    box-shadow: 0px 0px 30px 5px rgb(39, 154, 241);
+  }
+}
+@keyframes blue-glow {
+  20%,
+  70% {
+    background-color: #1f1b77;
+    box-shadow: none;
+  }
+  50%,
+  100% {
+    background-color: #3b28cc;
+    box-shadow: 0px 0px 30px 5px #3b28cc;
+  }
+}
+@keyframes purple-glow {
+  50%,
+  100% {
+    background-color: #4d1265;
+    box-shadow: none;
+  }
+  20%,
+  70% {
+    background-color: #9807b5;
+    box-shadow: 0px 0px 30px 5px #9807b5;
+  }
+}
